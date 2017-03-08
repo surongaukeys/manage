@@ -1,0 +1,48 @@
+@media (min-width: 992px){
+.modal-sev {
+    width: 700px;
+}
+}
+
+
+/*--------modal/mod-plan/lly-------  */
+.mod-plan .form-control{
+    margin:10px 0;
+}
+.mod-plan .remark-tex{
+    color:#999;
+}
+.mod-plan .textarea-div{
+    position:relative;
+}
+.mod-plan .textarea-div span{
+    position:absolute;
+    right:8px;
+    bottom:6px;
+    color:#f27068;
+}
+.mod-plan .remark-tex span:last-child{
+    display: block;
+    padding-left: 28px;
+}
+
+/* modal-seven */
+.modal-seven {
+    width: 430px;
+}
+.modal-seven .actionBtn {
+    display: table;
+    padding: 0px 24px 15px 24px;
+    width:100%;
+    margin-top: -5px;
+}
+.modal-seven .actionBtn .btn {
+    width: 48%;
+    margin-right: 0;
+}
+.modal-seven .actionBtn .btn:first-child{
+    float: left;
+}
+.modal-seven .actionBtn .btn:last-child{
+    float: right;
+}

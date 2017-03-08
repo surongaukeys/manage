@@ -1,0 +1,160 @@
+.top-nav .nav-notification > li .dropdown-menu.pop-up {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    width: 400px;
+    min-width: 400px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 7px;
+    right: 0;
+    left: auto;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li:first-child span :hover {
+    color: rgb(40, 196, 170);
+    cursor: pointer;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li:last-child a {
+    color: rgb(40, 196, 170);
+    cursor: pointer;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li:last-child a:hover {
+    background: #f1f1f1;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up .none-more {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: 298px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-top: 0;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li:hover {
+    background: #f9f9f9;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li {
+    overflow: hidden;
+    font-size: 13px;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li p {
+    line-height: 18px;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    width: 320px;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li p span {
+    margin-right: 6px;
+    display: inline-block;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div {
+    float: right;
+    padding: 10px 10px 10px 0;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div span {
+    color: #999;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div .text {
+
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div .icon {
+    display: none;
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div:hover .icon {
+    display: block;
+    cursor: pointer;
+    color: rgb(40, 196, 170);
+}
+
+ul.dropdown-menu.notification.dropdown-3.pull-right.pop-up li div:hover .text {
+    display: none;
+}
+
+.message-wrapper.romove-li{
+    text-align: start;
+}
+
+.fa.fa-bell.fa-lg{
+    padding: 10px;
+}
+#message-wrapper .romove-li a{
+    text-align: left !important;
+    display: inline-block;
+    width: 100% !important;
+    background-color: inherit !important;
+    color: dodgerblue !important;
+    padding-bottom: 22px;
+}
+#message-wrapper .romove-li a:hover{
+    background-color: inherit !important;
+    color: #0f3e68 !important;
+}
+#message-wrapper .romove-li > p{
+    padding: 0 !important;
+    margin-bottom: 0;
+}
+#message-wrapper {
+    border-bottom: solid #a6b0b7 thin;
+}
+#no_more > a, #list_all > a {
+    border-bottom: none;
+}
+
+#divMessage{
+    padding-top: 10px;
+}
+
+#message_count{
+    height: 16px;
+    position: absolute;
+    top: 1px;
+    right: 15px ;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+
+.top-nav .nav-notification > li {
+    width: 50px;
+    padding-right: 10px;;
+    position: relative;
+    float: left;
+}
+
+#mark_read{
+    padding: 3px;
+}

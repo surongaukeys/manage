@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>空白页</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <!-- 公用css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/bootstrap-table.css" rel="stylesheet">
+		<link href="css/pop.css" rel="stylesheet">
+		<link href="css/simplify.css" rel="stylesheet">
+		<link href="css/public.css" rel="stylesheet">
+		<link href="css/heard-right.css" rel="stylesheet">
+		<!-- 本文件css -->
+		<link href="css/CY.css" rel="stylesheet">
+  	</head>
+	<body>
+  		<div class="wrapper no-left">
+			<div class="main-container">
+				<div class="smart-widget-inner">
+
+					<!-- 页面区 -->
+					<div class="main-container">
+
+						<h3 class="header-text">搜索栏</h3>
+						<form class="form-inline no-margin" name="queryForm" id="queryForm">
+							<div class="search-form-div" style="padding: 9px 0px;">
+								<div class="search_l">
+									<input type="hidden" id="accstr" name="accstr">
+									<input type="hidden" id="aPayOrderNumber" name="aPayOrderNumber">
+									<div class="form-group">
+										账号
+										<div class="btn-group ">
+											<div id="accountName" name="accName" class="form-control" style="position: relative; width: 260px; border: 1px solid rgb(204, 204, 204);">
+												<ul class="new-box" style="width: 260px; display: none;">
+													<li class="" value="" style="background: white; color: rgb(51, 51, 51);">全部</li>
+													<li value="深圳市傲基电子商务股份有限公司" class="li-checked" style="background: white; color: rgb(51, 51, 51);">深圳市傲基电子商务股份有限公司</li>
+													<li value="深圳傲科海电子商务有限公司" style="background: white; color: rgb(51, 51, 51);">深圳傲科海电子商务有限公司</li>
+												</ul>
+												<input type="text" class="textCheck" readonly="readonly" value="全部" onfocus="this.blur()" style="border-left:none;border-right:none;">
+												<img class="input-img" src="images/new-vision/icon_search-terms_bounced.png">
+											</div>
+										</div>
+									</div>
+									<div class="form-group" id="payType" style="display: inline-block;">
+										支付方式
+										<div class="btn-group">
+											<div id="paymentMethod" name="payMethod" class="form-control" style="position:relative;width:100px;">
+												<ul class="new-box" style="width: 100px;">
+													<li class="li-checked" value="">全部</li>
+													<li value="线上支付">线上支付</li>
+													<li value="线下支付">线下支付</li>
+												</ul>
+												<input type="text" class="textCheck" readonly="readonly" value="全部" onfocus="this.blur()" style="border-left:none;border-right:none;">
+												<img class="input-img" src="images/new-vision/icon_search-terms_bounced.png">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span>收款账号</span>
+										<label class="sr-only"></label><input type="text" id="receivableAccountName" name="reAccountName" placeholder="供应商名称" class="form-control">
+										<label class="sr-only"></label>
+										<input type="text" id="receivableAccountNumber" name="reAccountNumber" class="form-control" placeholder="收款账户号">
+									</div>
+									<div class="form-group" id="aDao" style="display: inline-block;">
+										支付完成时间
+										<div class="btn-group">
+											<input size="16" type="text" id="settlementStartDate" name="setStartDate" value="" placeholder="起止时间" class="form-control form_datetime" data-date-format="yyyy-mm-dd" readonly="readonly">
+											<input size="16" type="text" id="settlementEndDate" name="setEndDate" value="" placeholder="结束时间" class="form-control form_datetime inp-last" data-date-format="yyyy-mm-dd" readonly="readonly">
+										</div>
+									</div>
+
+								</div>
+								<div class="search_r" style="width: 90px;">
+									<button type="button" onclick="searchAll()" class="btn btn-success marginTB-xs">搜索</button>
+									<button type="button" onclick="formReset()" class="btn btn-default reset marginTB-xs">重置</button>
+								</div>
+
+							</div>
+						</form>
+
+
+
+					</div><!--main-container-->
+					<!-- 页面区 -->
+
+				</div> <!--padding-md -->
+			</div><!--main-container -->
+		</div><!--wrapper -->
+  	</body>
+</html>
+
+
+    	<!-- 公用js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script src='js/jquery.slimscroll.min.js'></script>
+		<script src="js/simplify.js"></script>
+		<!-- 引入header -->
+		<script type="text/javascript" src = 'js/Loadhead.js'></script>
+
+		<!-- 本文件js -->
+

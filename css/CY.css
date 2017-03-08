@@ -1,0 +1,99 @@
+/*111111左边侧边栏 旧版本*/
+.sidebar-menu.fixed .block {
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.sidebar-menu .main-menu ul li a .menu-icon {
+    display: inline-block;
+    width: 26px;
+    text-align: center;
+    transition: color .4s ease;
+    -webkit-transition: color .4s ease;
+    -moz-transition: color .4s ease;
+    -ms-transition: color .4s ease;
+    -o-transition: color .4s ease;
+}
+.sidebar-menu span.text.m-left-sm,.sidebar-menu span.submenu-label
+{
+    font-size: 12px;
+    font-weight: normal;
+}
+.sidebar-menu .main-menu ul li a .submenu-icon:before {
+    content: "\f105";
+    display: inline-block;
+    font-family: FontAwesome;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bg-palette4 {
+    background-color: inherit;
+}
+.sidebar-menu .main-menu ul.submenu a{
+    margin-left: 26px;
+}
+.sidebar-menu .main-menu ul li:hover{
+    background-color: #17232c;
+}
+.sidebar-menu {
+    margin-top: 6px;
+}
+/*.sidebar-menu .main-menu ul li.open>a .submenu-icon:before {
+    font-family: FontAwesome;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}*/
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+aside .caret {
+    position: absolute;
+    right: 10px;
+    top:20px;
+}
+.sidebar-menu li.open .caret{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.slimScrollDiv{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+}
+.sidebar-inner.scrollable-sidebar{
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+}

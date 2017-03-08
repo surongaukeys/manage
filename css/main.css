@@ -1,0 +1,371 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*加载进来的scss*/
+/*主要风格*/
+/*@mixin*/
+/*更改默认的浏览器的滚动条*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #666;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #40bbf4;
+}
+
+/*去除谷歌默认黄色背景*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  -webkit-text-fill-color: #fff;
+}
+
+/*用来指定兼容哪些浏览器
+$supported-browsers:chrome,firefox,Opera ;*/
+/*兼容到IE8*/
+/*重置*/
+button {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/*兼容*/
+.img-sprite, .img-red_star, .img-top_bell, .img-top_bell_check, .img-top_computer, .img-top_computer_check, .img-top_data, .img-top_data_check, .img-top_order, .img-top_order_check, .img-top_out, .img-top_out_check, .img-top_run, .img-top_run_check, .img-top_set, .img-top_set_check, .img-top_shop, .img-top_shop_check {
+  background-image: url('../images/img-s1a8811bef3.png');
+  background-repeat: no-repeat;
+}
+
+.img-red_star {
+  background-position: 0 0;
+}
+
+.img-top_bell {
+  background-position: 0 -10px;
+}
+
+.img-top_bell_check {
+  background-position: 0 -29px;
+}
+
+.img-top_computer {
+  background-position: 0 -48px;
+}
+
+.img-top_computer_check {
+  background-position: 0 -64px;
+}
+
+.img-top_data {
+  background-position: 0 -80px;
+}
+
+.img-top_data_check {
+  background-position: 0 -98px;
+}
+
+.img-top_order {
+  background-position: 0 -116px;
+}
+
+.img-top_order_check {
+  background-position: 0 -133px;
+}
+
+.img-top_out {
+  background-position: 0 -150px;
+}
+
+.img-top_out_check {
+  background-position: 0 -167px;
+}
+
+.img-top_run {
+  background-position: 0 -184px;
+}
+
+.img-top_run_check {
+  background-position: 0 -202px;
+}
+
+.img-top_set {
+  background-position: 0 -220px;
+}
+
+.img-top_set_check {
+  background-position: 0 -238px;
+}
+
+.img-top_shop {
+  background-position: 0 -256px;
+}
+
+.img-top_shop_check {
+  background-position: 0 -272px;
+}
+
+/*头部*/
+.top-nav .index-tex {
+  margin-left: 56px;
+  padding: 0 6px;
+  width: 76px;
+  height: 55px;
+}
+.top-nav .index-tex:hover {
+  border-bottom: 2px solid #2cc3a9;
+  color: #fff;
+}
+.top-nav .index-tex span:first-child {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+.top-nav .index-tex span.img-top_shop,
+.top-nav .index-tex span.img-top_shop_check {
+  height: 16px;
+}
+.top-nav .index-tex span.img-top_order,
+.top-nav .index-tex span.img-top_order_check {
+  height: 17px;
+}
+.top-nav .img-top_out,
+.top-nav .img-top_out_check {
+  width: 18px;
+  height: 17px;
+  display: inline-block;
+}
+.top-nav .img-top_computer,
+.top-nav .img-top_computer_check {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+}
+.top-nav .img-top_bell,
+.top-nav .img-top_bell_check {
+  width: 18px;
+  height: 19px;
+  display: inline-block;
+}
+.top-nav .user-detail {
+  position: relative;
+}
+.top-nav .user-detail .badge {
+  position: absolute;
+  left: 8px;
+  top: 0;
+  padding: 1px 4px;
+}
+.top-nav .user-block {
+  margin-left: 0;
+  display: inline-block;
+  margin-right: 24px;
+}
+.top-nav .user-block .user-panel {
+  width: 166px;
+}
+.top-nav .user-block .user-panel ul li a {
+  padding: 5px 0;
+}
+.top-nav .bell-box a {
+  overflow: hidden;
+}
+.top-nav .bell-box a span:first-child {
+  float: left;
+  margin-left: 20px;
+}
+.top-nav .bell-box a span:last-child {
+  float: right;
+  color: #f27068;
+  margin-right: 20px;
+}
+.top-nav .m-right-sm {
+  padding: 0;
+}
+.top-nav .dropdown-menu {
+  right: -44px;
+}
+
+/*左侧导航*/
+.block {
+  padding-left: 0;
+}
+
+.img-red_star {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.sidebar-menu.fixed .block {
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 12px;
+}
+
+.sidebar-menu .main-menu ul li a .menu-icon {
+  display: inline-block;
+  width: 26px;
+  text-align: center;
+  transition: color .4s ease;
+  -webkit-transition: color .4s ease;
+  -moz-transition: color .4s ease;
+  -ms-transition: color .4s ease;
+  -o-transition: color .4s ease;
+}
+
+.sidebar-menu span.text.m-left-sm, .sidebar-menu span.submenu-label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.sidebar-menu .main-menu ul li a .submenu-icon:before {
+  content: "\f105";
+  display: inline-block;
+  font-family: FontAwesome;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bg-palette4 {
+  background-color: inherit;
+}
+
+.sidebar-menu .main-menu ul.submenu a {
+  margin-left: 30px;
+}
+
+.sidebar-menu .main-menu ul.submenu a .img-red_star {
+  opacity: 0;
+}
+
+.sidebar-menu .main-menu ul li:hover {
+  background-color: #17232c;
+}
+
+.sidebar-menu {
+  margin-top: 6px;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+aside .caret {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.sidebar-menu li.open .caret {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.slimScrollDiv {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: 100%;
+}
+
+.sidebar-inner.scrollable-sidebar {
+  overflow: hidden;
+  width: auto;
+  height: 100%;
+}

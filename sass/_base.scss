@@ -1,0 +1,30 @@
+/*主要风格*/
+$font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$red:#f27068;
+$bl-pu:#8591e8;
+$pink:#fd81a5;
+$green:#2cc3a9;
+$gary:#8c9ba7;
+$blue:#4cabf2;
+$border-c:#d2d2d2;
+/*@mixin*/
+@mixin red-b {
+  background-color: #d6001c;
+  color: #fff;
+}
+@mixin  img{
+  width: 100%;
+  vertical-align: center;
+}
+@mixin  wh($w){
+  width: $w;
+  height:$w;
+}
+@mixin  w-h($w,$h){
+  width: $w;
+  height:$h;
+}
+@mixin font($size,$color){
+  font-size: $size;
+  color: $color;
+}

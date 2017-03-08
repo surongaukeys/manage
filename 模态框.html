@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>空白页</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <!-- 公用css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/bootstrap-table.css" rel="stylesheet">
+		<link href="css/pop.css" rel="stylesheet">
+		<link href="css/simplify.css" rel="stylesheet">
+		<link href="css/public.css" rel="stylesheet">
+		<link href="css/heard-right.css" rel="stylesheet">
+		<!-- 本文件css -->
+		<link href="css/CY.css" rel="stylesheet">
+		<!-- 本文件js -->
+		<script type="text/javascript" src = 'js/confirm_box.js'></script>
+  	</head>
+	<body>
+  		<div class="wrapper no-left">
+			<div class="main-container">
+				<div class="smart-widget-inner">
+
+					<!-- 页面区 -->
+					<div class="main-container">
+
+						<h3 class="header-text">模态框</h3>
+						<button class="btn btn-info" data-toggle="modal" data-target="#normalModal"><font>普通模态</font></button>
+						<button class="btn btn-warning" data-toggle="modal" data-target="#largeModal"><font>大模态</font></button>
+						<button class="btn btn-danger" data-toggle="modal" data-target="#smallModal"><font>小模态</font></button>
+						<button class="btn btn-blue" data-toggle="modal" data-target="#smallModal01"><font>警告</font></button>
+						<button class="btn btn-purBlue lock-screen" data-toggle="modal" data-target="#lock-screen"><font>锁屏模态</font></button>
+						<button class="btn btn-pink" data-toggle="modal" data-target="#custom-modal"><font>店铺选择</font></button>
+						<button class="btn btn-gray" data-toggle="modal" data-target="#class-modal"><font>品类选择</font></button>
+						<button class="btn btn-success" data-toggle="modal" data-target="#addModal"><font>新增模态</font></button>
+
+						<div class="modal fade in" id="normalModal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>×</font></span><span class="sr-only"><font>关闭</font></span></button>
+										<h4 class="modal-title"><font>莫代尔称号</font></h4>
+									</div>
+									<div class="modal-body"><font>
+										内容区代码
+									</font></div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>保存</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- normalModal -->
+
+						<div class="modal fade in" id="largeModal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>×</font></span><span class="sr-only"><font>关闭</font></span></button>
+										<h4 class="modal-title"><font>莫代尔称号</font></h4>
+									</div>
+									<div class="modal-body"><font>
+										内容区代码
+									</font></div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>保存</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!--largeModal -->
+
+						<div class="modal fade in" id="smallModal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>× </font></span></button>
+										<h4 class="modal-title"><font>莫代尔称号</font></h4>
+									</div>
+									<div class="modal-body"><font>
+										内容区代码
+									</font></div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>提交</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- smallModal -->
+
+						<div class="modal fade in" id="smallModal01" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog modal-sm modal-one">
+								<div class="modal-content">
+									<div class="modal-header" style="color:#ec4338;border-radius: 5px 5px 0 0;">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>×</font></span></button>
+										<h4 class="modal-title"><font><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>注意</font></h4>
+									</div>
+									<div class="modal-body"><font><font>
+										确定要将所选中的产品下线？申请下线后需在下线确认中再次确认一次
+									</font></font></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-success"><font>确定</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- delete-->
+
+						<div id="lock-screen" aria-hidden="false" style="display: none;">
+							<div class="lock-screen-con">
+								<div><i class="fa fa-spinner fa-spin m-right-xs"></i>正在操作，请稍等...</div>
+							</div>
+						</div><!--lock-screen-->
+
+						<div class="modal fade in" id="custom-modal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog shop-sel"><!-- 一定要加shop-sel -->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>× </font></span></button>
+										<h4 class="modal-title"><font>店铺选择</font></h4>
+									</div>
+									<div class="modal-body">
+										<div class="search-form-div" style="padding: 9px 0px;">
+											<form class="form-inline no-margin">
+												<span></span>
+												<div class="form-group">
+													<label class="sr-only"></label>
+													<input type="text"  class="form-control" placeholder="请输入店铺名称">
+												</div>
+												<button type="button" class="btn btn-success marginTB-xs right margin_r_n">搜索</button>
+
+											</form>
+										</div>
+										<div class="mod-sel-num">
+											<label><span><input type="checkbox" id="all" onclick="cli('account');"></span>全选</label>
+											<label id="accNumber">共104个店铺，</label>
+											<label id="selectedAcc">已选择0个店铺</label>
+										</div>
+										<div class="bootstrap-table">
+											<div class="fixed-table-container">
+												<div class="fixed-table-body" style="overflow-x: hidden;">
+													<table data-toggle="table" class="table table-hover" style="padding: 0px;">
+														<tbody>
+														<div>
+															<label class="title_class" title="2AYWS" style="width:20%"><span><input type="checkbox" name="account" value="151"></span>2AYWS</label>
+															<label class="title_class" title="BaiKeDa" style="width:20%"><span><input type="checkbox" name="account" value="413"></span>BaiKeDa</label>
+															<label  class="title_class" title="BE" style="width:20%"><span><input type="checkbox" name="account" value="385"></span>BE</label>
+															<label class="title_class" title="bestini" style="width:20%"><span><input type="checkbox" name="account" value="364"></span>bestini</label>
+															<label class="title_class" title="blackzebra" style="width:20%"><span><input type="checkbox" name="account" value="363"></span>blackzebra</label>
+															<label class="title_class" title="BTO" style="width:20%"><span><input type="checkbox" name="account" value="538"></span>BTO</label>
+															<label class="title_class" title="ER-amazon" style="width:20%"><span><input type="checkbox" name="account" value="386"></span>ER-amazon</label>
+														</div>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div><!--bootstrap-table/主要是参照样式的写法-->
+									</div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>提交</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- 店铺选择 -->
+
+						<div class="modal fade in" id="class-modal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog ">
+								<!-- 一定要加class_sel -->
+								<div class="modal-content class_sel">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>× </font></span></button>
+										<h4 class="modal-title"><font>品类选择</font></h4>
+									</div>
+									<div class="fun-btn">
+										<button type="button" class="btn btn-purBlue marginTB-xs">刷新</button>
+										<button type="button" class="btn btn-pink marginTB-xs" >折叠</button>
+										<button type="button" class="btn btn-warning marginTB-xs">展开</button>
+									</div>
+									<div class="modal-body">
+										<div class="search-form-div" style="padding: 9px 0px;">
+											<form class="form-inline no-margin">
+												<span></span>
+												<div class="form-group">
+													<label class="sr-only"></label>
+													<input type="text" id="search_condition" class="form-control" placeholder="请输入关键字">
+												</div>
+												<button type="button" class="btn btn-success marginTB-xs right margin_r_n">搜索</button>
+											</form>
+										</div>
+									</div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>提交</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- 店铺选择 -->
+
+						<div class="modal fade in" id="addModal" aria-hidden="false" style="display: none;">
+							<div class="modal-dialog modal-one">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><font>×</font></span><span class="sr-only"><font>关闭</font></span></button>
+										<h4 class="modal-title"><font>新增/修改</font></h4>
+									</div>
+									<div class="modal-body">
+										<form class="form-horizontal no-margin" >
+											<div class="form-group">
+												<label class="control-label col-lg-3">用户名</label>
+												<div class="col-lg-6">
+													<input type="text" id="addaccount" placeholder="请填写注册邮箱：XXXX@aukeys.com" class="form-control input-sm" data-parsley-type="url">
+												</div><!-- /.col -->
+											</div><!-- /form-group -->
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">密码</label>
+												<div class="col-lg-6">
+													<input type="password" placeholder="密码 6-20个大、小写字母/数字" class="form-control input-sm">
+												</div><!-- /.col -->
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">真实姓名</label>
+												<div class="col-lg-6">
+													<input type="text" class="form-control input-sm" placeholder="真实姓名为2-5个中文汉字，或者2-20个英文字母(区分大小写,英文名可以有空格)">
+												</div> <!-- /.col -->
+											</div> <!-- /form-group -->
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">状态</label>
+												<div class="col-lg-6">
+													<select  class="form-control" id="addstate">
+														<option value="1">启用</option>
+														<option value="0">禁用</option>
+													</select>
+												</div><!-- /.col -->
+											</div><!-- /form-group -->
+										</form>
+									</div>
+									<div class="modal-footer spe">
+										<button type="button" class="btn btn-blue"><font>保存</font></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- 新增模态 -->
+
+
+						<h3 class="header-text">确认弹框</h3>
+						<button class="btn btn-success" onclick = 'confirm_box(function(){alert(666)},this)'>删除</button>
+						<div class="confirm" style="display:none; margin-left: 0px;">
+							<div class="confirm_txt"></div>
+							<span class="close_x">×</span>
+							<button type="button" class="btn marginTB-xs" style="background:#f27068;margin-left:16px;margin-right:5px;color:#fff">确认</button>
+							<button type="button" class="btn marginTB-xs btn-primary" style="background:#2cc3a9!important;color:#fff">退出</button>
+						</div>
+
+					</div><!-- main-container -->
+					<!-- 页面区 -->
+
+				</div> <!--padding-md -->
+			</div><!--main-container -->
+		</div><!--wrapper -->
+  	</body>
+</html>
+
+
+    	<!-- 公用js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script src='js/jquery.slimscroll.min.js'></script>
+		<script src="js/simplify.js"></script>
+		<!-- 引入header -->
+		<script type="text/javascript" src = 'js/Loadhead.js'></script>
+
+		<!-- 本文件js -->
+
