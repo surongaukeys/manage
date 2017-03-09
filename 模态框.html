@@ -263,6 +263,29 @@
 </html>
 
 
+<!--  汇率修改 模态框-->
+<div class="modal fade" id="editModal">
+  	<div class="modal-dialog modal-one">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        		<h4 class="modal-title">编辑汇率</h4>
+      		</div>
+      		<div class="modal-body">
+      		<div class="form-group row" hidden="true">
+					<label class="control-label col-lg-4">一元人民币=</label>
+					<div class="col-lg-7">
+						<input id="warehouseIdEdit"  type="text" class="form-control input-sm" data-parsley-type="url" placeholder="" readonly="readonly"/>
+						<span class="unit">美元</span>
+					</div>
+			</div>
+      		<div class="modal-footer spe">
+        		<button id="token_btn" type="button" class="btn btn-blue">确定</button>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
     	<!-- 公用js -->
 		<script src="js/jquery-1.11.1.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>

@@ -1088,7 +1088,7 @@ span.text.m-left-sm,span.submenu-label {
 .wrapper {
     overflow: inherit;
     padding-bottom: 0;
-    padding-top:100px;
+    padding-top:60px;
     z-index: 0;
     background:#fff;
     margin-left: 160px;

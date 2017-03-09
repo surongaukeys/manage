@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>汇率编辑</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <!-- 公用css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/bootstrap-table.css" rel="stylesheet">
+		<link href="css/pop.css" rel="stylesheet">
+		<link href="css/simplify.css" rel="stylesheet">
+		<link href="css/public.css" rel="stylesheet">
+		<link href="css/heard-right.css" rel="stylesheet">
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- 本文件css -->
+		<link href="css/main.css" rel="stylesheet">
+		<style type="text/css">
+			.unit{
+				  position: absolute;
+				  top: 1px;
+				  right: 20px;
+			}
+		</style>
+  	</head>
+	<body>
+  		<div class="wrapper no-left">
+			<div class="main-container">
+				<div class="padding-md up-btn">
+					<div class="smart-widget-inner">
+					   <h2>一元人民币兑换汇率</h2> 
+					   <button type="button" class="btn btn-primary" onclick="updateC()">编辑汇率</button>
+					   <table id="table" class="table table-striped table-hover" style="font-family: 微软雅黑;font-size: 14px;"></table>	
+					</div><!-- ./smart-widget-inner -->
+				</div><!-- ./padding-md -->
+			</div>
+		</div><!--wrapper -->
+
+		<!--  汇率修改 模态框-->
+<div class="modal fade" id="editModal">
+  	<div class="modal-dialog modal-one">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        		<h4 class="modal-title">编辑汇率</h4>
+      		</div>
+      		<div class="modal-body">
+      		<div class="form-group row">
+					<label class="control-label col-lg-4">一元人民币=</label>
+					<div class="col-lg-8">
+					 <input id=""  type="text" class="form-control input-sm" placeholder="" />
+						<span class="unit">美元</span>
+					</div>
+			</div>
+			</div>
+      		<div class="modal-footer spe">
+        		<button id="token_btn" type="button" class="btn btn-blue">确定</button>
+      		</div>
+    	</div>
+  	</div>
+</div>
+  	</body>
+</html>
+
+    	<!-- 公用js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap-table.js"></script>
+	    <script src="js/bootstrap-table-zh-CN.min.js"></script>
+		<script src='js/jquery.slimscroll.min.js'></script>
+		<script src="js/simplify.js"></script>
+		<script src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/common/commonUtil.js"></script>
+        <!--引入header-->
+		<script type="text/javascript" src = 'js/Loadhead.js'></script>
+		<!-- 本文件js -->
+        <script type="text/javascript" src = 'js/set/set.js'></script>
