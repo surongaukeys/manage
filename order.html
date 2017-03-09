@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>订单详情</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <!-- 公用css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/bootstrap-table.css" rel="stylesheet">
+		<link href="css/pop.css" rel="stylesheet">
+		<link href="css/simplify.css" rel="stylesheet">
+		<link href="css/public.css" rel="stylesheet">
+		<link href="css/heard-right.css" rel="stylesheet">
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- 本文件css -->
+		<link href="css/main.css" rel="stylesheet">
+  	</head>
+	<body>
+  		<div class="wrapper no-left">
+			
+			<ul class="breadcrumb">
+			<li><span class="primary-font"><i class="icon-home"></i></span>Shopee</li>
+			<li>订单数据</li>	  
+		</ul>
+			<div class="main-container">
+				<div class="padding-md up-btn">
+						
+						<div class="smart-widget-inner">
+						    <div class="search-form-div" style="padding: 13px 0px;">
+						<form action="searchList" method="get" class="form-inline no-margin" id="queryForm">
+							<input type="hidden" name="containerId" id="containerId" value="0"/>
+							<div class="search_l">
+								<div class="form-group">
+									<label class="sr-only"></label>
+									<input type="text" id="country" class="form-control" placeholder="请输入国家"/>
+								</div>
+								<!-- 多选开始 -->
+								<div class="form-group">运输方式
+								    <div class="btn-group">
+							            <div id="transportType" class="form-control" style="position:relative;width:120px;">
+							                <ul class="new-box" style="width: 120px;">
+							                    <li class="li-checked" value="all">全部</li>
+							                    <li value="0">空运</li>
+							                    <li value="1">海运</li>
+							                </ul>
+							                <input type="text" class="textCheck" readonly="readonly" value="全部" onfocus="this.blur()" style="border-left:none;border-right:none;"/>
+							                <img alt="下拉小箭头" class="input-img" src="images/new-vision/icon_search-terms_bounced.png"/>
+							            </div>
+							        </div>
+								</div>
+								
+								
+								<div class="form-group">退税与否
+							        <div class="btn-group">
+							            <div id="isTax" class="form-control" style="position:relative;width:120px;">
+							                <ul class="new-box" style="width: 120px;">
+							                    <li class="li-checked" value="all">全部</li>
+							                    <li value="1">退税</li>
+							                    <li value="0">非退税</li>
+							                </ul>
+							                <input type="text" class="textCheck" readonly="readonly" value="全部" onfocus="this.blur()" style="border-left:none;border-right:none;"/>
+							                <img alt="下拉小箭头" class="input-img" src="images/new-vision/icon_search-terms_bounced.png"/>
+							            </div>
+							        </div>
+								</div>
+								<div class="btn-group marginTB-xs advanced-search" style=" float: none;display: inline-block;">
+							 		<a type="button" data-toggle="dropdown" onclick="searchH()" class="uperSearch">
+							    		高级搜索<img src="images/new-vision/nav_right_user-name_arrow.png"/>
+							  		</a>
+								</div>
+												<!-- 多选结束 -->
+							</div>
+							<div class="search_r" style="width: 196px;">
+								<a href="javascript:void(0)"><img class="resetbutton" onclick="resetButton($('.form-inline')[0])" src="images/new-vision/icon_Advanced-search.png"/></a>
+								<button type="button" onclick="searchResult(true);" class="btn btn-success marginTB-xs" style="float: right; margin-right: 0;">搜索</button>
+								<button style="display:none"></button>
+							</div>
+							<ul class="dropdown-menu" role="menu" id="searchH" style="display: none;">
+								<div class="form-group">
+									<label class="sr-only">SKU</label>
+									<input type="text" id="sku" class="form-control" placeholder="请输入SKU"/>
+								</div>
+								<div class="form-group">
+									<label class="sr-only">销售</label>
+									<input type="text" id="users" class="form-control" placeholder="请输入销售名字"/>
+								</div>
+							    
+							    <div class="form-group ">日期
+									<div class="btn-group">
+										<input size="16" type="text" id="planDateStart" name="planDateStart" value="" placeholder="开始时间" class="form-control form_datetime " data-date-format="yyyy-mm-dd" 
+										onclick="$('.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu').css('z-index',1);"></input>
+										<input size="16" type="text" id="planDateEnd" name="planDateEnd" value="" placeholder="结束时间" class="form-control form_datetime " data-date-format="yyyy-mm-dd" 
+										onclick="$('.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu').css('z-index',1);"></input>
+									</div>
+								</div>
+							    <div class="form-group">打包状态
+							    	<div class="btn-group">
+								        <div id="packStatus" class="form-control" style="position:relative;width:120px;">
+							                <ul class="new-box" style="width: 120px;">
+							                    <li class="li-checked" value="all">全部</li>
+							                    <li value="0">未打包</li>
+							                    <li value="1">已打包</li>
+							                </ul>
+							                <input type="text" class="textCheck" readonly="readonly" value="全部" onfocus="this.blur()" style="border-left:none;border-right:none;"/>
+							                <img alt="下拉小箭头" class="input-img" src="images/new-vision/icon_search-terms_bounced.png"/>
+							            </div>
+						            </div>
+							    </div>
+							</ul>
+						</form>
+					</div> 
+							<!-- <div class="search-form-div">
+								<form class="form-inline no-margin" id="queryForm">
+									<div class="search_l">
+								    <div class="form-group">店铺账号
+										<label class="sr-only"></label><input type="text" id="shopAccount" class="form-control" placeholder="请输入店铺账号"/>
+									</div>
+									<div class="form-group">订单编号
+										<label class="sr-only"></label><input type="text" id="Order_id" class="form-control" placeholder="请输入订单编号"/>
+									</div>
+									<div class="form-group"> 客户邮箱
+										<label class="sr-only"></label><input type="text" id="sku" class="form-control" placeholder="多个使用逗号隔开"/>
+									</div>
+									<div class="form-group ">下单时间
+										<div class="btn-group">
+											<input size="16" type="text" id="orderDateStart" name="orderDateStart" value="" placeholder="开始时间" class="form-control form_datetime " data-date-format="yyyy-mm-dd" onfocus="onfocus"></input>
+											<input size="16" type="text" id="orderDateEnd" name="orderDateEnd" value="" placeholder="结束时间" class="form-control form_datetime " data-date-format="yyyy-mm-dd" onfocus="onfocus"></input>
+										</div>
+									</div>
+									<div class="form-group">店铺 <label class="sr-only"></label>
+										<div class="sel-div">
+											<input type="hidden" id="accountID" name="accountID" class="form-control" placeholder="" /> <input type="text" id="accountName"
+											name="accountName" class="form-control" placeholder="" disabled="disabled" />
+											<img class="sel-up" onclick="shopUtils()" th:src="@{/images/new-vision/icon_search-terms_bounced.png}"/>
+										</div>
+									</div>
+									<div class="form-group">订单状态
+										<div class="btn-group">
+										<select id="orderStatus" class="form-control">
+											<option value="all">全部</option>
+											<option value="待导入易登">待导入易登</option>
+											<option value="已导入易登">已导入易登</option>
+											<option value="待推送跟踪号">待推送跟踪号</option>
+											<option value="已推送跟踪号">已推送跟踪号</option>
+											<option value="推送跟踪号失败">推送跟踪号失败</option>	
+											</select>
+										<div id="orderStatus" class="form-control" style = 'position:relative;width:140px;'>
+											<ul class = 'new-box' style = 'width:140px;'>
+												<li class = 'li-checked' value = 'all'>全部</li>
+												<li value="待导入易登">待导入易登</li>
+												<li value="已导入易登">已导入易登</li>
+												<li value="待推送跟踪号">待推送跟踪号</li>
+												<li value="已推送跟踪号">已推送跟踪号</li>
+												<li value="推送跟踪号失败">推送跟踪号失败</li>
+											</ul>
+											<input type = 'text' class='textCheck' readonly = 'readonly' value = '全部' onfocus="this.blur()" style = 'border-left:none;border-right:none;'/>
+											<img th:src="@{/images/new-vision/icon_search-terms_bounced.png}" alt="下拉小箭头" class = 'input-img'/>
+										</div>
+										</div>										
+									</div>
+									
+									</div>
+									<div class="search_r">
+										<button id="sel-button" type="button" onclick="" class="btn btn-success marginTB-xs">搜索</button>
+										<button type="button" class="btn btn-default reset marginTB-xs" onclick="searchReset()">重置</button>
+									</div>
+								</form>
+							</div> -->
+							
+							<table id="table" class="table table-striped table-hover" style="font-family: 微软雅黑;font-size: 14px;"></table>	
+						</div><!-- ./smart-widget-inner -->
+				</div><!-- ./padding-md -->
+			</div>
+		</div><!--wrapper -->
+  	</body>
+</html>
+    	<!-- 公用js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap-table.js"></script>
+	    <script src="js/bootstrap-table-zh-CN.js"></script>
+		<script src='js/jquery.slimscroll.min.js'></script>
+		<script src="js/simplify.js"></script>
+		<script src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <!--引入header-->
+		<script type="text/javascript" src = 'js/Loadhead.js'></script>
+		<!-- 本文件js -->
+        <script type="text/javascript" src = 'js/order/order.js'></script>
